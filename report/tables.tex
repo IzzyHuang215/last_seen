@@ -1,0 +1,55 @@
+\begin{table}[h]
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\caption{Main results on the shared 9-image benchmark (best per column in bold).}
+\label{tab:main}
+\begin{tabular}{@{}l ccc cc c c r@{}}
+\toprule
+ & \multicolumn{3}{c}{mAP} & \multicolumn{2}{c}{Recall} & & Items & CPU \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-6}
+Model & all & COCO & non-COCO & COCO & non-COCO & Precision & found & ms/img \\
+\midrule
+YOLO11s (baseline) & 0.42 & 0.84 & 0.00 & 0.79 & 0.00 & 0.79 & 8 & 427 \\
+Faster R-CNN & 0.45 & 0.91 & 0.00 & 0.79 & 0.00 & 0.73 & 8 & 11334 \\
+RT-DETR-L & 0.47 & \textbf{0.94} & 0.00 & 0.91 & 0.00 & 0.72 & 8 & 1560 \\
+\addlinespace
+YOLO-World-S & 0.59 & 0.88 & 0.31 & 0.71 & 0.44 & 0.74 & 12 & \textbf{425} \\
+YOLOE-11S & 0.53 & 0.78 & 0.29 & 0.71 & 0.25 & 0.68 & 9 & 480 \\
+YOLOE-11S @1280 & 0.57 & 0.83 & 0.30 & 0.76 & 0.38 & 0.62 & 11 & 1743 \\
+YOLOE-11L & 0.67 & 0.91 & 0.43 & 0.76 & 0.31 & \textbf{0.82} & 10 & 1510 \\
+OWLv2 & \textbf{0.79} & 0.93 & \textbf{0.64} & \textbf{1.00} & \textbf{0.88} & 0.43 & \textbf{14} & 22185 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[h]
+\centering\small
+\setlength{\tabcolsep}{3.5pt}
+\caption{Per-item AP. Pos.\ = number of images containing the item. Best per row in bold.}
+\label{tab:peritem}
+\begin{tabular}{@{}l c cccccccc@{}}
+\toprule
+Item & Pos. & YOLO11s & \makecell{Faster\\R-CNN} & \makecell{RT-\\DETR} & \makecell{YOLO-\\World} & \makecell{YOLOE\\-S} & \makecell{YOLOE-S\\@1280} & \makecell{YOLOE\\-L} & OWLv2 \\
+\midrule
+\multicolumn{10}{@{}l}{\textit{Inside COCO}} \\
+\quad cell phone & 6 & 0.50 & 0.74 & 0.71 & 0.58 & 0.54 & 0.48 & 0.81 & \textbf{0.86} \\
+\quad laptop & 6 & 0.93 & 0.98 & \textbf{1.00} & 0.90 & 0.81 & 0.81 & 0.93 & \textbf{1.00} \\
+\quad mouse & 4 & 0.67 & \textbf{0.95} & 0.88 & 0.69 & 0.42 & 0.42 & 0.62 & \textbf{0.95} \\
+\quad cup & 6 & \textbf{1.00} & 0.92 & \textbf{1.00} & 0.94 & 0.90 & \textbf{1.00} & \textbf{1.00} & \textbf{1.00} \\
+\quad bottle & 2 & \textbf{1.00} & \textbf{1.00} & \textbf{1.00} & \textbf{1.00} & \textbf{1.00} & \textbf{1.00} & \textbf{1.00} & \textbf{1.00} \\
+\quad book & 5 & 0.79 & 0.93 & 0.90 & 0.94 & 0.59 & \textbf{0.97} & 0.93 & 0.66 \\
+\quad potted plant & 3 & 0.87 & 0.76 & \textbf{1.00} & \textbf{1.00} & \textbf{1.00} & \textbf{1.00} & \textbf{1.00} & \textbf{1.00} \\
+\quad bowl & 2 & \textbf{1.00} & \textbf{1.00} & \textbf{1.00} & \textbf{1.00} & \textbf{1.00} & \textbf{1.00} & \textbf{1.00} & \textbf{1.00} \\
+\midrule
+\multicolumn{10}{@{}l}{\textit{Outside COCO}} \\
+\quad glasses & 2 & 0.00 & 0.00 & 0.00 & 0.50 & 0.00 & 0.50 & 0.50 & \textbf{1.00} \\
+\quad headphones & 2 & 0.00 & 0.00 & 0.00 & 0.50 & 0.50 & 0.50 & 0.50 & \textbf{1.00} \\
+\quad pen & 6 & 0.00 & 0.00 & 0.00 & 0.46 & 0.38 & 0.54 & 0.91 & \textbf{0.93} \\
+\quad keys & 1 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+\quad earbuds case & 2 & 0.00 & 0.00 & 0.00 & 0.00 & 0.42 & \textbf{0.83} & 0.50 & 0.70 \\
+\quad wristwatch & 1 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & \textbf{0.50} \\
+\quad camera & 1 & 0.00 & 0.00 & 0.00 & \textbf{1.00} & \textbf{1.00} & 0.00 & \textbf{1.00} & \textbf{1.00} \\
+\quad face mask & 1 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 & 0.00 \\
+\bottomrule
+\end{tabular}
+\end{table}

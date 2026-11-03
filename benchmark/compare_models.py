@@ -212,8 +212,9 @@ def draw(rgb, dets, conf, path):
     im = im.resize((int(im.width * scale), int(im.height * scale)))
     d = ImageDraw.Draw(im)
     try:
-        font = ImageFont.truetype("DejaVuSans-Bold.ttf", 22)
-    except OSError:
+        import matplotlib.font_manager as fm
+        font = ImageFont.truetype(fm.findfont(fm.FontProperties(family="DejaVu Sans", weight="bold")), 22)
+    except Exception:
         font = ImageFont.load_default()
     for item, s, b in dets:
         if s < conf:
@@ -402,10 +403,15 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--models", nargs="*", default=list(MODELS))
     ap.add_argument("--report-only", action="store_true")
+    ap.add_argument("--skip-existing", action="store_true",
+                    help="don't re-run models that already have cached raw results")
     args = ap.parse_args()
     if not args.report_only:
         images = load_images()
         for key in args.models:
+            if args.skip_existing and (RAW_DIR / f"{key}.json").exists():
+                print(f"=== {key}: cached, skipping")
+                continue
             try:
                 run_model(key, images)
             except Exception as e:  # keep going if one model can't load (e.g. no internet for weights)

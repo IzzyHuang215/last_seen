@@ -52,13 +52,23 @@ fig.savefig(OUT / "per_item_ap_heatmap.png", dpi=180, facecolor=SURF)
 print("saved heatmap")
 
 # --- 2. qualitative example on 9.jpg ----------------------------------------
+def load_font(size):
+    import matplotlib.font_manager as fm
+    for name in ("DejaVuSans-Bold.ttf", fm.findfont(fm.FontProperties(family="DejaVu Sans", weight="bold"))):
+        try:
+            return ImageFont.truetype(name, size)
+        except OSError:
+            pass
+    return ImageFont.load_default()
+
+
 def panel(model_key, title, thr, img="9.jpg", width=900):
     rec = json.load(open(OUT / "raw" / f"{model_key}.json"))
     im = Image.open(BENCH.parent / "images" / img).convert("RGB")
     s = width / im.width
     im = im.resize((width, int(im.height * s)))
     d = ImageDraw.Draw(im)
-    f = ImageFont.truetype("DejaVuSans-Bold.ttf", 22)
+    f = load_font(22)
     for det in rec["detections"][img]:
         if det["score"] < thr:
             continue
@@ -71,12 +81,12 @@ def panel(model_key, title, thr, img="9.jpg", width=900):
         d.text((x1 + 4, max(0, y1 - 27)), t, fill="white", font=f)
     return im, f"{title}  (conf ≥ {thr})"
 
-panels = [panel("yolo11s", "YOLO11s", 0.25), panel("yoloe_l", "YOLOE-11L", 0.10),
-          panel("yoloe_1280", "YOLOE-11S @1280px", 0.10)]
+panels = [panel("yolo11s", "YOLO11s (baseline)", 0.3), panel("yoloe_l", "YOLOE-11L", 0.3),
+          panel("owlv2", "OWLv2", 0.3)]
 fig, axs = plt.subplots(1, 3, figsize=(15, 7.4), facecolor=SURF)
 for a, (im, t) in zip(axs, panels):
     a.imshow(im); a.set_title(t, fontsize=12, loc="left"); a.axis("off")
-fig.suptitle("Same photo, three detectors — blue = COCO item, red = non-COCO item", fontsize=13, x=0.01, ha="left")
+fig.suptitle("Our real photo, three detectors — blue = COCO item, red = non-COCO item", fontsize=13, x=0.01, ha="left")
 fig.tight_layout()
 fig.savefig(OUT / "example_9jpg.png", dpi=130, facecolor=SURF)
 print("saved example")

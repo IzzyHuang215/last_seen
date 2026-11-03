@@ -15,6 +15,22 @@ YOLO11s (baseline),earbuds case,no,2,0.0,0.0,0
 YOLO11s (baseline),wristwatch,no,1,0.0,0.0,0
 YOLO11s (baseline),camera,no,1,0.0,0.0,0
 YOLO11s (baseline),face mask,no,1,0.0,0.0,0
+Faster R-CNN R50-FPN v2,cell phone,yes,6,0.74,0.33,0
+Faster R-CNN R50-FPN v2,laptop,yes,6,0.98,1.0,1
+Faster R-CNN R50-FPN v2,mouse,yes,4,0.95,1.0,3
+Faster R-CNN R50-FPN v2,cup,yes,6,0.92,0.83,0
+Faster R-CNN R50-FPN v2,bottle,yes,2,1.0,1.0,1
+Faster R-CNN R50-FPN v2,book,yes,5,0.93,1.0,4
+Faster R-CNN R50-FPN v2,potted plant,yes,3,0.76,0.33,1
+Faster R-CNN R50-FPN v2,bowl,yes,2,1.0,1.0,0
+Faster R-CNN R50-FPN v2,glasses,no,2,0.0,0.0,0
+Faster R-CNN R50-FPN v2,headphones,no,2,0.0,0.0,0
+Faster R-CNN R50-FPN v2,pen,no,6,0.0,0.0,0
+Faster R-CNN R50-FPN v2,keys,no,1,0.0,0.0,0
+Faster R-CNN R50-FPN v2,earbuds case,no,2,0.0,0.0,0
+Faster R-CNN R50-FPN v2,wristwatch,no,1,0.0,0.0,0
+Faster R-CNN R50-FPN v2,camera,no,1,0.0,0.0,0
+Faster R-CNN R50-FPN v2,face mask,no,1,0.0,0.0,0
 RT-DETR-L,cell phone,yes,6,0.71,0.67,1
 RT-DETR-L,laptop,yes,6,1.0,1.0,2
 RT-DETR-L,mouse,yes,4,0.88,0.75,2
@@ -31,6 +47,22 @@ RT-DETR-L,earbuds case,no,2,0.0,0.0,0
 RT-DETR-L,wristwatch,no,1,0.0,0.0,0
 RT-DETR-L,camera,no,1,0.0,0.0,0
 RT-DETR-L,face mask,no,1,0.0,0.0,0
+YOLO-World v2-S,cell phone,yes,6,0.58,0.5,3
+YOLO-World v2-S,laptop,yes,6,0.9,0.67,1
+YOLO-World v2-S,mouse,yes,4,0.69,0.5,1
+YOLO-World v2-S,cup,yes,6,0.94,0.83,1
+YOLO-World v2-S,bottle,yes,2,1.0,1.0,0
+YOLO-World v2-S,book,yes,5,0.94,0.8,2
+YOLO-World v2-S,potted plant,yes,3,1.0,0.67,0
+YOLO-World v2-S,bowl,yes,2,1.0,1.0,0
+YOLO-World v2-S,glasses,no,2,0.5,0.5,0
+YOLO-World v2-S,headphones,no,2,0.5,0.5,0
+YOLO-World v2-S,pen,no,6,0.46,0.67,3
+YOLO-World v2-S,keys,no,1,0.0,0.0,0
+YOLO-World v2-S,earbuds case,no,2,0.0,0.0,0
+YOLO-World v2-S,wristwatch,no,1,0.0,0.0,0
+YOLO-World v2-S,camera,no,1,1.0,1.0,0
+YOLO-World v2-S,face mask,no,1,0.0,0.0,0
 YOLOE-11S,cell phone,yes,6,0.54,0.33,1
 YOLOE-11S,laptop,yes,6,0.81,0.83,1
 YOLOE-11S,mouse,yes,4,0.42,0.5,1
@@ -79,3 +111,19 @@ YOLOE-11L,earbuds case,no,2,0.5,0.0,0
 YOLOE-11L,wristwatch,no,1,0.0,0.0,0
 YOLOE-11L,camera,no,1,1.0,1.0,1
 YOLOE-11L,face mask,no,1,0.0,0.0,0
+OWLv2 B/16,cell phone,yes,6,0.86,1.0,5
+OWLv2 B/16,laptop,yes,6,1.0,1.0,6
+OWLv2 B/16,mouse,yes,4,0.95,1.0,9
+OWLv2 B/16,cup,yes,6,1.0,1.0,4
+OWLv2 B/16,bottle,yes,2,1.0,1.0,1
+OWLv2 B/16,book,yes,5,0.66,1.0,4
+OWLv2 B/16,potted plant,yes,3,1.0,1.0,2
+OWLv2 B/16,bowl,yes,2,1.0,1.0,2
+OWLv2 B/16,glasses,no,2,1.0,1.0,4
+OWLv2 B/16,headphones,no,2,1.0,1.0,4
+OWLv2 B/16,pen,no,6,0.93,1.0,7
+OWLv2 B/16,keys,no,1,0.0,0.0,5
+OWLv2 B/16,earbuds case,no,2,0.7,1.0,5
+OWLv2 B/16,wristwatch,no,1,0.5,1.0,1
+OWLv2 B/16,camera,no,1,1.0,1.0,4
+OWLv2 B/16,face mask,no,1,0.0,0.0,0
