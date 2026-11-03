@@ -1,3 +1,7 @@
 .venv/
 yolo11n.pt
 detected_images/
+benchmark/weights/
+benchmark/results/vis/
+mobileclip*.ts
+__pycache__/

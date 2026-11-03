@@ -1,0 +1,41 @@
+{
+  "_note": "Image-level ground truth for the 9 images in images/. 1 = item present, 0 = absent, -1 = ambiguous (ignored in scoring). Labeled by eye; see README for definitions.",
+  "items": {
+    "cell phone":   {"coco": true,  "coco_classes": ["cell phone"],          "prompt": "cell phone"},
+    "laptop":       {"coco": true,  "coco_classes": ["laptop"],              "prompt": "laptop"},
+    "mouse":        {"coco": true,  "coco_classes": ["mouse"],               "prompt": "computer mouse"},
+    "cup":          {"coco": true,  "coco_classes": ["cup", "wine glass"],   "prompt": "cup"},
+    "bottle":       {"coco": true,  "coco_classes": ["bottle"],              "prompt": "bottle"},
+    "book":         {"coco": true,  "coco_classes": ["book"],                "prompt": "book"},
+    "potted plant": {"coco": true,  "coco_classes": ["potted plant"],        "prompt": "potted plant"},
+    "bowl":         {"coco": true,  "coco_classes": ["bowl"],                "prompt": "bowl"},
+    "glasses":      {"coco": false, "coco_classes": [],                      "prompt": "glasses"},
+    "headphones":   {"coco": false, "coco_classes": [],                      "prompt": "headphones"},
+    "pen":          {"coco": false, "coco_classes": [],                      "prompt": "pen"},
+    "keys":         {"coco": false, "coco_classes": [],                      "prompt": "keys"},
+    "earbuds case": {"coco": false, "coco_classes": [],                      "prompt": "earbuds case"},
+    "wristwatch":   {"coco": false, "coco_classes": [],                      "prompt": "wristwatch"},
+    "camera":       {"coco": false, "coco_classes": [],                      "prompt": "camera"},
+    "face mask":    {"coco": false, "coco_classes": [],                      "prompt": "face mask"}
+  },
+  "labels": {
+    "1.jpg": {"cell phone": 1, "laptop": 1, "mouse": 0, "cup": 0, "bottle": 0, "book": 1, "potted plant": 0, "bowl": 0,
+              "glasses": 1, "headphones": 0, "pen": 1, "keys": 0, "earbuds case": 0, "wristwatch": 0, "camera": 0, "face mask": 0},
+    "2.jpg": {"cell phone": 0, "laptop": 0, "mouse": 1, "cup": 0, "bottle": 1, "book": 1, "potted plant": 0, "bowl": 1,
+              "glasses": 0, "headphones": 0, "pen": 1, "keys": 0, "earbuds case": 0, "wristwatch": 0, "camera": 0, "face mask": 0},
+    "3.jpg": {"cell phone": 1, "laptop": 0, "mouse": 1, "cup": 0, "bottle": 0, "book": 1, "potted plant": 1, "bowl": -1,
+              "glasses": 0, "headphones": 0, "pen": 0, "keys": 0, "earbuds case": 1, "wristwatch": 0, "camera": 0, "face mask": 0},
+    "4.jpg": {"cell phone": 1, "laptop": 1, "mouse": 1, "cup": 1, "bottle": 0, "book": 0, "potted plant": 1, "bowl": 0,
+              "glasses": 0, "headphones": 1, "pen": 0, "keys": 0, "earbuds case": 0, "wristwatch": 0, "camera": 1, "face mask": 0},
+    "5.jpg": {"cell phone": 0, "laptop": 0, "mouse": 0, "cup": 1, "bottle": 0, "book": 1, "potted plant": 0, "bowl": 1,
+              "glasses": 0, "headphones": 0, "pen": 1, "keys": 0, "earbuds case": 0, "wristwatch": 0, "camera": 0, "face mask": 0},
+    "6.jpg": {"cell phone": 1, "laptop": 1, "mouse": 1, "cup": 1, "bottle": 0, "book": 1, "potted plant": -1, "bowl": 0,
+              "glasses": 0, "headphones": 0, "pen": 1, "keys": 0, "earbuds case": 0, "wristwatch": 1, "camera": 0, "face mask": 0},
+    "7.jpg": {"cell phone": 1, "laptop": 1, "mouse": 0, "cup": 1, "bottle": 1, "book": -1, "potted plant": 1, "bowl": 0,
+              "glasses": 0, "headphones": 1, "pen": 1, "keys": 0, "earbuds case": 0, "wristwatch": 0, "camera": 0, "face mask": 1},
+    "8.jpg": {"cell phone": 1, "laptop": 1, "mouse": 0, "cup": 1, "bottle": -1, "book": 0, "potted plant": 0, "bowl": 0,
+              "glasses": 0, "headphones": 0, "pen": 1, "keys": 0, "earbuds case": -1, "wristwatch": 0, "camera": 0, "face mask": 0},
+    "9.jpg": {"cell phone": 0, "laptop": 1, "mouse": 0, "cup": 1, "bottle": 0, "book": 0, "potted plant": 0, "bowl": 0,
+              "glasses": 1, "headphones": 0, "pen": 0, "keys": 1, "earbuds case": 1, "wristwatch": 0, "camera": 0, "face mask": 0}
+  }
+}

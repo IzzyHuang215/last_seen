@@ -1,0 +1,81 @@
+Model,Item,COCO,Positives,AP,Recall,FP images
+YOLO11s (baseline),cell phone,yes,6,0.5,0.5,0
+YOLO11s (baseline),laptop,yes,6,0.93,1.0,2
+YOLO11s (baseline),mouse,yes,4,0.67,0.5,2
+YOLO11s (baseline),cup,yes,6,1.0,1.0,0
+YOLO11s (baseline),bottle,yes,2,1.0,1.0,0
+YOLO11s (baseline),book,yes,5,0.79,0.8,2
+YOLO11s (baseline),potted plant,yes,3,0.87,0.67,0
+YOLO11s (baseline),bowl,yes,2,1.0,1.0,1
+YOLO11s (baseline),glasses,no,2,0.0,0.0,0
+YOLO11s (baseline),headphones,no,2,0.0,0.0,0
+YOLO11s (baseline),pen,no,6,0.0,0.0,0
+YOLO11s (baseline),keys,no,1,0.0,0.0,0
+YOLO11s (baseline),earbuds case,no,2,0.0,0.0,0
+YOLO11s (baseline),wristwatch,no,1,0.0,0.0,0
+YOLO11s (baseline),camera,no,1,0.0,0.0,0
+YOLO11s (baseline),face mask,no,1,0.0,0.0,0
+RT-DETR-L,cell phone,yes,6,0.71,0.67,1
+RT-DETR-L,laptop,yes,6,1.0,1.0,2
+RT-DETR-L,mouse,yes,4,0.88,0.75,2
+RT-DETR-L,cup,yes,6,1.0,1.0,3
+RT-DETR-L,bottle,yes,2,1.0,1.0,0
+RT-DETR-L,book,yes,5,0.9,1.0,4
+RT-DETR-L,potted plant,yes,3,1.0,1.0,0
+RT-DETR-L,bowl,yes,2,1.0,1.0,0
+RT-DETR-L,glasses,no,2,0.0,0.0,0
+RT-DETR-L,headphones,no,2,0.0,0.0,0
+RT-DETR-L,pen,no,6,0.0,0.0,0
+RT-DETR-L,keys,no,1,0.0,0.0,0
+RT-DETR-L,earbuds case,no,2,0.0,0.0,0
+RT-DETR-L,wristwatch,no,1,0.0,0.0,0
+RT-DETR-L,camera,no,1,0.0,0.0,0
+RT-DETR-L,face mask,no,1,0.0,0.0,0
+YOLOE-11S,cell phone,yes,6,0.54,0.33,1
+YOLOE-11S,laptop,yes,6,0.81,0.83,1
+YOLOE-11S,mouse,yes,4,0.42,0.5,1
+YOLOE-11S,cup,yes,6,0.9,0.83,3
+YOLOE-11S,bottle,yes,2,1.0,1.0,1
+YOLOE-11S,book,yes,5,0.59,0.6,3
+YOLOE-11S,potted plant,yes,3,1.0,1.0,0
+YOLOE-11S,bowl,yes,2,1.0,1.0,1
+YOLOE-11S,glasses,no,2,0.0,0.0,0
+YOLOE-11S,headphones,no,2,0.5,0.0,0
+YOLOE-11S,pen,no,6,0.38,0.67,2
+YOLOE-11S,keys,no,1,0.0,0.0,0
+YOLOE-11S,earbuds case,no,2,0.42,0.0,0
+YOLOE-11S,wristwatch,no,1,0.0,0.0,0
+YOLOE-11S,camera,no,1,1.0,0.0,0
+YOLOE-11S,face mask,no,1,0.0,0.0,0
+YOLOE-11S @1280px,cell phone,yes,6,0.48,0.33,4
+YOLOE-11S @1280px,laptop,yes,6,0.81,0.83,2
+YOLOE-11S @1280px,mouse,yes,4,0.42,0.5,3
+YOLOE-11S @1280px,cup,yes,6,1.0,1.0,2
+YOLOE-11S @1280px,bottle,yes,2,1.0,1.0,0
+YOLOE-11S @1280px,book,yes,5,0.97,1.0,4
+YOLOE-11S @1280px,potted plant,yes,3,1.0,0.67,0
+YOLOE-11S @1280px,bowl,yes,2,1.0,1.0,1
+YOLOE-11S @1280px,glasses,no,2,0.5,0.0,0
+YOLOE-11S @1280px,headphones,no,2,0.5,0.5,0
+YOLOE-11S @1280px,pen,no,6,0.54,0.67,3
+YOLOE-11S @1280px,keys,no,1,0.0,0.0,0
+YOLOE-11S @1280px,earbuds case,no,2,0.83,0.5,1
+YOLOE-11S @1280px,wristwatch,no,1,0.0,0.0,0
+YOLOE-11S @1280px,camera,no,1,0.0,0.0,0
+YOLOE-11S @1280px,face mask,no,1,0.0,0.0,0
+YOLOE-11L,cell phone,yes,6,0.81,0.33,0
+YOLOE-11L,laptop,yes,6,0.93,0.83,1
+YOLOE-11L,mouse,yes,4,0.62,0.5,1
+YOLOE-11L,cup,yes,6,1.0,1.0,0
+YOLOE-11L,bottle,yes,2,1.0,1.0,1
+YOLOE-11L,book,yes,5,0.93,0.8,1
+YOLOE-11L,potted plant,yes,3,1.0,1.0,0
+YOLOE-11L,bowl,yes,2,1.0,1.0,0
+YOLOE-11L,glasses,no,2,0.5,0.0,0
+YOLOE-11L,headphones,no,2,0.5,0.0,0
+YOLOE-11L,pen,no,6,0.91,0.67,2
+YOLOE-11L,keys,no,1,0.0,0.0,0
+YOLOE-11L,earbuds case,no,2,0.5,0.0,0
+YOLOE-11L,wristwatch,no,1,0.0,0.0,0
+YOLOE-11L,camera,no,1,1.0,1.0,1
+YOLOE-11L,face mask,no,1,0.0,0.0,0

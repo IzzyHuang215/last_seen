@@ -1,0 +1,6 @@
+Model,Architecture,Open-vocab,Params (M),CPU ms/img,mAP (all 16),mAP COCO (8),mAP non-COCO (8),Recall COCO,Recall non-COCO,Precision,Items found (/16),Conf thr
+YOLO11s (baseline),"CNN, one-stage",no,9.5,306,0.42,0.84,0.0,0.79,0.0,0.79,8,0.25
+RT-DETR-L,Transformer (DETR),no,33.0,1189,0.47,0.94,0.0,0.91,0.0,0.72,8,0.25
+YOLOE-11S,CNN + MobileCLIP text encoder,yes,13.7,452,0.53,0.78,0.29,0.71,0.25,0.68,9,0.25
+YOLOE-11S @1280px,CNN + MobileCLIP text encoder,yes,13.7,1505,0.57,0.83,0.3,0.76,0.38,0.62,11,0.25
+YOLOE-11L,CNN + MobileCLIP text encoder,yes,35.2,1066,0.67,0.91,0.43,0.76,0.31,0.82,10,0.25
